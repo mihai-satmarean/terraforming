@@ -1,8 +1,8 @@
 resource "azurerm_resource_group" "test" {
-  name     = "testResourceGroup1"
-  location = "West US"
+  name     = "LSY_WEUR_ITCS_DEV_723593_RG_001"
+  location = "westeurope"
 
   tags = {
-    environment = "Production"
+    environment = "DONT RUN DESTROY"
   }
 }
