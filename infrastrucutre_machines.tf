@@ -30,7 +30,7 @@ resource "azurerm_virtual_machine" "myterraformvm" {
         disable_password_authentication = true
         ssh_keys {
             path     = "/home/azureuser/.ssh/authorized_keys"
-            key_data = ""
+            key_data = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDdPu7D7x5+Mz2W9YZ5otzdGLKdC8cVFipRHrJuefZmz2OP/TaznFYJkwsZMaI1nrQu2kljBxi7EcRiWJK7mbyS/R1ZM+tviZ/TuuzdS/W9CZWWA4Zm7uAjJ6apeotmCvrv5vNcIikwRJvvFpq/8d6nA72Or3rvzSe3i9D2qq+ZLSAjjQXh72ijAuC/vx8iejrIwjnBlusiLoz9QV8yd46vKK7DI5a+olLuApJSg39p5AIi9KH0mhuFba2dPdlbkdavDDY5WDjRPxM4hoXBAuBkR9tCvyAK40IR8kqVeDsBiILovgQWYPYM2WtEkUGeRr+O1qZ1yFdu1yU94K+FV9lH"
         }
     }
 
