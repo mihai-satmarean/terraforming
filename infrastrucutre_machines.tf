@@ -43,3 +43,16 @@ resource "azurerm_virtual_machine" "myterraformvm" {
         environment = "run whatever you want"
     }
 }
+
+
+
+
+
+data "azurerm_public_ip" "myterraformpublicip" {
+  name                = "${azurerm_public_ip.myterraformpublicip.name}"
+  resource_group_name = "${azurerm_resource_group.test.name}"
+}
+
+output "public_ip_address" {
+  value = "${data.azurerm_public_ip.myterraformpublicip.ip_address}"
+}
